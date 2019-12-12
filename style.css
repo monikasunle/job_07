@@ -1,0 +1,101 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+ul,li{
+	list-style: none;
+}
+.laba{
+	float: left;
+	margin-left: 150px;
+}
+.top{
+	height: 16px;
+	background-color: #ccc;
+}
+.gonggaolan{
+	display: inline block;
+	height: 16px;
+	margin-left: 0px;
+	margin-right: 150px;
+	overflow: hidden;
+}
+.tishi{
+	width: 150px;
+	height: 16px;
+	margin-right: 0px;
+	float: right;
+	display: block;
+	white-space: nowrap;
+	font-size: 12px;
+	color: red;
+	overflow: hidden;
+}
+/*轮播图*/
+.box{
+	width: 1200px;
+	height: 382px;
+	border: 1px solid white;
+	margin: 10px auto;
+	position: relative;
+	overflow: hidden;
+}
+/*轮播的所有图片*/
+.slider{
+	width: 8400px;
+	position: absolute;
+	left: -1200px;
+}
+/*每张轮播的图片*/
+.slide{
+	width: 1200px;
+	overflow: hidden;
+	float: left;
+}
+/*左右箭头的属性*/
+.box>span{
+	display: block;
+	width: 30px;
+	height: 50px;
+	text-align: center;
+	cursor: pointer;
+	color: white;
+	top: 175px;
+	line-height: 50px;
+	background: rgb(255,0,0);
+	font-size: 30px;
+	position: absolute;
+	opacity: 0;
+}
+/*左箭头定位*/
+#left{
+	left: 30px;
+}
+/*右箭头定位*/
+#right{
+	right: 30px;
+}
+/*小按钮们的定位*/
+.nav{
+	position: absolute;
+	left: 500px;
+	bottom: 20px;
+}
+/*小按钮的属性设置*/
+.nav>li{
+	float: left;
+	width: 20px;
+	height: 20px;
+	background: #ccc;
+	cursor: pointer;
+	margin: 0 10px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 20px;
+	font-size: 12px;
+}
+/*触发时的小按钮*/
+.nav .active{
+	background: red;
+	color: white;
+}
